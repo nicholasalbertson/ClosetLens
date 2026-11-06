@@ -1,66 +1,37 @@
-# Sovereign Lens — Integrated System Architecture
+# Sovereign Lens — Integrated System Architecture (v2)
 
-**Goal**: Personal wardrobe intelligence that combines:
-1. Outfit Lens-style detection (any photo → individual items → shoppable similar)
-2. Google Photos Wardrobe (scan library → catalog owned pieces → mix/match + try-on)
-3. Sovereign Closet composer + scoring + proof jobs
-4. Rap aesthetic / BLAIZE archive intelligence (documented / reconstructed / custom looks, vest & jewelry library)
+**Status**: v2 prototype implemented with real Gemini vision call, Digital Twin constraints, expanded Volume III seed, and Google Photos OAuth skeleton.
 
-## Data layers
+## What’s new in v2
 
-| Layer | Source | Purpose |
-|-------|--------|---------|
-| Owned wardrobe | Google Photos API (or manual upload) + vision model | Items you actually own, extracted from personal photos |
-| External detection | User-uploaded photo or URL | Per-item detection → similar product search (Outfit Lens model) |
-| Style archive | Volume III + custom vest/jewelry library | Inspiration, scoring bias, custom design references |
-| Product graph | Seed + affiliate feeds (ASOS, Nike, Moncler, etc.) | Shoppable results with price + shipping filter |
-| Canon / identity | BLAIZE physical canon (tunnels, frames, tattoos, physique) | Scoring weights & digital twin constraints |
+| Feature | Implementation |
+|---------|----------------|
+| Real vision detection | Gemini 1.5 Flash vision API call on image drop. Structured JSON output (name, category, color, silhouette, confidence, search terms). Requires user-provided API key (stored locally). |
+| Digital Twin constraints | Checkboxes for 4-inch tunnels, thick frames, athletic physique, tattoos. Bias scoring (+0.04–0.08) and generate exact positive/negative prompts for Midjourney/Flux/LoRA. |
+| Expanded product seed | 15+ items drawn from Volume III customs, BLAIZE vest library (Milano Ghost, Celestial Ice), HALO MAX, P1 sourcing matrix (K87, PSD, AF1, Cuban, frames, tunnels). |
+| Google Photos | Settings for Client ID + connect button. Documents the exact OAuth + mediaItems.search flow with FASHION content category. Ready to wire Google Identity Services. |
+| Scoring | Identity alignment heavily rewards black/charcoal + twin items. |
 
-## Pipeline
+## Files
 
-1. **Ingest**
-   - Google Photos: mediaItems.search with contentFilter (FASHION / PEOPLE) → download → vision.
-   - Manual: drag-drop any image.
-2. **Detect**
-   - Fashion object detection (14+ categories) + attributes (color, silhouette, material).
-   - Segment individual items (not whole-outfit blob).
-3. **Match**
-   - Owned: cosine / embedding match against personal wardrobe catalog.
-   - External: visual search against product index or live retailer APIs.
-4. **Compose**
-   - Existing Sovereign Closet engine: required slots, palette, budget, owned-only flag.
-   - Scoring: identity_alignment, silhouette_balance, palette_harmony, context_fit, wardrobe_leverage.
-5. **Visualize**
-   - Virtual try-on (Nano Banana / Flux / custom LoRA on digital twin).
-   - Outfit cards + proof jobs.
-6. **Output**
-   - Saved looks, Throne/wishlist links, content calendar (30-day BLAIZE engine).
+- `sovereign-lens-v2.html` — full interactive prototype
+- `sovereign-lens.html` — earlier simulated version
+- `ARCHITECTURE.md` — this document
 
-## Production stack (recommended)
+## How to use v2
 
-- Vision: Google Gemini / OpenAI vision or specialized fashion model (Ximilar-style or fine-tuned).
-- Storage: Google Photos Library API + own Postgres (item_master schema from Outfit Generator Database doc).
-- Search: embedding index (pgvector or Pinecone) for similar items.
-- Frontend: the single-file prototype as starting point; evolve to Next.js / React Native.
-- Monetization: affiliate commissions (Outfit Lens model) + optional custom commission (HALO MAX, vest RFQs).
+1. Open `sovereign-lens-v2.html`.
+2. Click **Settings** → paste a Gemini API key from [AI Studio](https://aistudio.google.com/apikey).
+3. Drop any fashion photo in the **Lens / Vision** tab.
+4. Toggle Digital Twin options and generate the prompt.
+5. Compose looks with twin bias enabled.
 
-## Current prototype
+## Production next steps
 
-`sovereign-lens.html` — single offline file that demonstrates:
-- Composer + scoring (simplified but faithful)
-- Simulated photo detection results
-- Personal wardrobe grid
-- Archive browser (artists + custom vests)
-- Local history + proof jobs
+- Replace placeholder images with real product photography or affiliate links.
+- Implement full Google Identity Services + Photos Library API (mediaItems.search + download).
+- Persist wardrobe to backend (Postgres + pgvector for embeddings).
+- Add shipping-country filter and live price comparison.
+- Fine-tune a fashion detection model if Gemini latency/cost becomes an issue.
 
-Open in any browser. No backend required.
-
-## Next concrete steps
-
-1. Wire real vision (start with Gemini 1.5 Flash vision on uploaded images).
-2. Google Photos OAuth + mediaItems.list / search.
-3. Expand SEED_PRODUCTS from the full Volume III archive + product feeds.
-4. Add digital twin LoRA constraints from Global Style Intelligence System.
-5. Shipping-country filter + multi-retailer price comparison.
-
-Status: Prototype ready. Architecture locked to existing Sovereign Closet domain model.
+The domain model remains compatible with the original Sovereign Closet Python package.
