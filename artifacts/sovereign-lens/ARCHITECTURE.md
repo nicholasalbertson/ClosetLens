@@ -1,37 +1,34 @@
-# Sovereign Lens — Integrated System Architecture (v2)
+# Sovereign Lens — Integrated System Architecture (v3)
 
-**Status**: v2 prototype implemented with real Gemini vision call, Digital Twin constraints, expanded Volume III seed, and Google Photos OAuth skeleton.
+**Status**: Expanded data + local stdlib backend added. Frontend remains fully usable offline; backend provides consistent scoring and data serving.
 
-## What’s new in v2
+## Layers
 
-| Feature | Implementation |
-|---------|----------------|
-| Real vision detection | Gemini 1.5 Flash vision API call on image drop. Structured JSON output (name, category, color, silhouette, confidence, search terms). Requires user-provided API key (stored locally). |
-| Digital Twin constraints | Checkboxes for 4-inch tunnels, thick frames, athletic physique, tattoos. Bias scoring (+0.04–0.08) and generate exact positive/negative prompts for Midjourney/Flux/LoRA. |
-| Expanded product seed | 15+ items drawn from Volume III customs, BLAIZE vest library (Milano Ghost, Celestial Ice), HALO MAX, P1 sourcing matrix (K87, PSD, AF1, Cuban, frames, tunnels). |
-| Google Photos | Settings for Client ID + connect button. Documents the exact OAuth + mediaItems.search flow with FASHION content category. Ready to wire Google Identity Services. |
-| Scoring | Identity alignment heavily rewards black/charcoal + twin items. |
+| Layer | Current state |
+|-------|----------------|
+| Frontend | `sovereign-lens-v2.html` — Gemini vision, Digital Twin prompt gen, compose, archive browser |
+| Data | `data/products.json` (20 items), `data/archive.json` (15 looks + vests) |
+| Backend | `backend/server.py` — stdlib HTTP server with `/api/compose`, `/api/twin-prompt`, `/api/products`, `/api/archive` |
+| Domain | Original Sovereign Closet Python package in `repo-bootstrap/` (scoring, canon, proof jobs) |
+| Vision | Gemini 1.5 Flash (client-side key or future proxy) |
+| Twin | Constraints bias scoring and emit generation prompts |
 
-## Files
+## Scoring (aligned with original)
 
-- `sovereign-lens-v2.html` — full interactive prototype
-- `sovereign-lens.html` — earlier simulated version
-- `ARCHITECTURE.md` — this document
+- Identity alignment (black/charcoal heavily rewarded)
+- Silhouette balance
+- Palette harmony
+- Context fit
+- Wardrobe leverage
+- Twin bonus (tunnels, frames, black dominance)
 
-## How to use v2
+## Production path
 
-1. Open `sovereign-lens-v2.html`.
-2. Click **Settings** → paste a Gemini API key from [AI Studio](https://aistudio.google.com/apikey).
-3. Drop any fashion photo in the **Lens / Vision** tab.
-4. Toggle Digital Twin options and generate the prompt.
-5. Compose looks with twin bias enabled.
+1. Replace placeholder images with real product / affiliate imagery.
+2. Implement Google Photos OAuth + mediaItems.search (FASHION category).
+3. Move Gemini call behind backend proxy (key never in browser).
+4. Add embedding index for similar-item search after vision detection.
+5. Persist wardrobe and saved looks (Postgres).
+6. Wire Throne / wishlist and 30-day content calendar from Global Style Intelligence System.
 
-## Production next steps
-
-- Replace placeholder images with real product photography or affiliate links.
-- Implement full Google Identity Services + Photos Library API (mediaItems.search + download).
-- Persist wardrobe to backend (Postgres + pgvector for embeddings).
-- Add shipping-country filter and live price comparison.
-- Fine-tune a fashion detection model if Gemini latency/cost becomes an issue.
-
-The domain model remains compatible with the original Sovereign Closet Python package.
+All custom vest and jewelry concepts remain fashion-only (no ballistic claims).
