@@ -1,0 +1,1000 @@
+[
+  {
+    "id": "P001",
+    "style_name": "Black Tech Fleece Hoodie",
+    "brand": "Nike",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "relaxed",
+    "price": 120,
+    "owned": true,
+    "tags": [
+      "tech",
+      "foundation"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Tech+Hood"
+  },
+  {
+    "id": "P002",
+    "style_name": "Charcoal Wide Cargo",
+    "brand": "Custom",
+    "product_type": "bottom",
+    "colors": [
+      "charcoal",
+      "black"
+    ],
+    "silhouette": "wide",
+    "price": 180,
+    "owned": true,
+    "tags": [
+      "cargo",
+      "drill"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Cargo"
+  },
+  {
+    "id": "P003",
+    "style_name": "Air Max 95 Triple Black",
+    "brand": "Nike",
+    "product_type": "footwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "chunky",
+    "price": 180,
+    "owned": true,
+    "tags": [
+      "am95",
+      "central-cee"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=AM95"
+  },
+  {
+    "id": "P004",
+    "style_name": "Crimson High-Gloss Puffer",
+    "brand": "Moncler-inspired",
+    "product_type": "outerwear",
+    "colors": [
+      "crimson",
+      "red"
+    ],
+    "silhouette": "substantial",
+    "price": 850,
+    "owned": false,
+    "tags": [
+      "tonal",
+      "moncler",
+      "week1"
+    ],
+    "image": "https://placehold.co/200/3a1f12/d4af37?text=Crimson+Puffer"
+  },
+  {
+    "id": "P005",
+    "style_name": "10mm Silver Cuban",
+    "brand": "Custom",
+    "product_type": "accessory",
+    "colors": [
+      "silver"
+    ],
+    "silhouette": "substantial",
+    "price": 420,
+    "owned": true,
+    "tags": [
+      "ice",
+      "icon"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Cuban"
+  },
+  {
+    "id": "P006",
+    "style_name": "Milano Ghost Fashion Vest",
+    "brand": "BLAIZE",
+    "product_type": "outerwear",
+    "colors": [
+      "charcoal",
+      "black"
+    ],
+    "silhouette": "fitted",
+    "price": 280,
+    "owned": false,
+    "tags": [
+      "vest",
+      "shiva",
+      "armory"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Ghost+Vest"
+  },
+  {
+    "id": "P007",
+    "style_name": "Celestial Ice White Vest",
+    "brand": "BLAIZE",
+    "product_type": "outerwear",
+    "colors": [
+      "white",
+      "pearl"
+    ],
+    "silhouette": "padded",
+    "price": 340,
+    "owned": false,
+    "tags": [
+      "vest",
+      "anuel",
+      "ice"
+    ],
+    "image": "https://placehold.co/200/f5f5f5/111?text=Ice+Vest"
+  },
+  {
+    "id": "P008",
+    "style_name": "Thick Black Acetate Frames",
+    "brand": "Critical",
+    "product_type": "accessory",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "thick",
+    "price": 220,
+    "owned": true,
+    "tags": [
+      "canon",
+      "frames"
+    ],
+    "image": "https://placehold.co/200/111/f2f2f5?text=Frames"
+  },
+  {
+    "id": "P009",
+    "style_name": "4-inch Black Tunnels",
+    "brand": "Spectrum",
+    "product_type": "accessory",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "substantial",
+    "price": 45,
+    "owned": true,
+    "tags": [
+      "canon",
+      "tunnels",
+      "north-star"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Tunnels"
+  },
+  {
+    "id": "P010",
+    "style_name": "Ivory Tailored Jacket",
+    "brand": "Eladio-inspired",
+    "product_type": "outerwear",
+    "colors": [
+      "ivory",
+      "cream"
+    ],
+    "silhouette": "tailored",
+    "price": 650,
+    "owned": false,
+    "tags": [
+      "executive",
+      "sartorial"
+    ],
+    "image": "https://placehold.co/200/2a2a2a/f2f2f5?text=Ivory+Jacket"
+  },
+  {
+    "id": "P011",
+    "style_name": "Navy Nike Tech Windrunner",
+    "brand": "Nike",
+    "product_type": "top",
+    "colors": [
+      "navy"
+    ],
+    "silhouette": "relaxed",
+    "price": 130,
+    "owned": false,
+    "tags": [
+      "central-cee",
+      "tech"
+    ],
+    "image": "https://placehold.co/200/0a1628/60a5fa?text=Navy+Tech"
+  },
+  {
+    "id": "P012",
+    "style_name": "Black Leather-look Flares",
+    "brand": "Carti-inspired",
+    "product_type": "bottom",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "wide",
+    "price": 320,
+    "owned": false,
+    "tags": [
+      "gothic",
+      "opium"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=Leather+Flares"
+  },
+  {
+    "id": "P013",
+    "style_name": "HALO MAX Medallion",
+    "brand": "BLAIZE Icon",
+    "product_type": "accessory",
+    "colors": [
+      "silver"
+    ],
+    "silhouette": "substantial",
+    "price": 1200,
+    "owned": false,
+    "tags": [
+      "icon",
+      "halo",
+      "jewelry"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=HALO+MAX"
+  },
+  {
+    "id": "P014",
+    "style_name": "PSD Black Boxers (visible)",
+    "brand": "PSD",
+    "product_type": "underwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "fitted",
+    "price": 30,
+    "owned": true,
+    "tags": [
+      "foundation",
+      "waistband",
+      "underwear"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=PSD"
+  },
+  {
+    "id": "P015",
+    "style_name": "Carhartt K87 Black Tee",
+    "brand": "Carhartt",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "relaxed",
+    "price": 30,
+    "owned": true,
+    "tags": [
+      "foundation",
+      "heavyweight"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=K87"
+  },
+  {
+    "id": "P016",
+    "style_name": "Opium Noir Leather Vest",
+    "brand": "BLAIZE",
+    "product_type": "outerwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "elongated",
+    "price": 310,
+    "owned": false,
+    "tags": [
+      "vest",
+      "carti",
+      "noir"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=Opium+Vest"
+  },
+  {
+    "id": "P017",
+    "style_name": "Royal Blue Puffer Gilet",
+    "brand": "Lil Baby ref",
+    "product_type": "outerwear",
+    "colors": [
+      "royal",
+      "blue"
+    ],
+    "silhouette": "padded",
+    "price": 290,
+    "owned": false,
+    "tags": [
+      "ice",
+      "blue"
+    ],
+    "image": "https://placehold.co/200/0a1a3a/60a5fa?text=Blue+Vest"
+  },
+  {
+    "id": "P018",
+    "style_name": "White AF1 Low",
+    "brand": "Nike",
+    "product_type": "footwear",
+    "colors": [
+      "white"
+    ],
+    "silhouette": "low",
+    "price": 115,
+    "owned": true,
+    "tags": [
+      "foundation",
+      "af1"
+    ],
+    "image": "https://placehold.co/200/eee/111?text=AF1"
+  },
+  {
+    "id": "P019",
+    "style_name": "Black Stacked Denim",
+    "brand": "Amiri-inspired",
+    "product_type": "bottom",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "stacked",
+    "price": 480,
+    "owned": false,
+    "tags": [
+      "denim",
+      "trap"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Stacked+Denim"
+  },
+  {
+    "id": "P020",
+    "style_name": "Silver Tennis Choker 5mm",
+    "brand": "Custom",
+    "product_type": "accessory",
+    "colors": [
+      "silver"
+    ],
+    "silhouette": "minimal",
+    "price": 280,
+    "owned": false,
+    "tags": [
+      "ice",
+      "tennis"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Tennis"
+  },
+  {
+    "id": "P021",
+    "style_name": "Moncler Maya Puffer",
+    "brand": "Moncler",
+    "product_type": "outerwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "substantial",
+    "price": 1450,
+    "owned": false,
+    "tags": [
+      "moncler",
+      "luxe",
+      "formula1"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Maya"
+  },
+  {
+    "id": "P022",
+    "style_name": "Supreme Box Logo Hoodie",
+    "brand": "Supreme",
+    "product_type": "top",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "silhouette": "relaxed",
+    "price": 180,
+    "owned": false,
+    "tags": [
+      "hypebeast",
+      "boxlogo"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Box+Logo"
+  },
+  {
+    "id": "P023",
+    "style_name": "BAPE Shark Hoodie",
+    "brand": "BAPE",
+    "product_type": "top",
+    "colors": [
+      "camo",
+      "green"
+    ],
+    "silhouette": "oversized",
+    "price": 280,
+    "owned": false,
+    "tags": [
+      "bape",
+      "graphic",
+      "formula2"
+    ],
+    "image": "https://placehold.co/200/1a3a1a/4ade80?text=Shark"
+  },
+  {
+    "id": "P024",
+    "style_name": "AMIRI MX1 Distressed Jeans",
+    "brand": "AMIRI",
+    "product_type": "bottom",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "skinny",
+    "price": 850,
+    "owned": false,
+    "tags": [
+      "denim",
+      "trap",
+      "formula1"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=MX1"
+  },
+  {
+    "id": "P025",
+    "style_name": "Purple Brand P001 Skinny",
+    "brand": "Purple Brand",
+    "product_type": "bottom",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "skinny",
+    "price": 320,
+    "owned": false,
+    "tags": [
+      "denim",
+      "drill"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=P001"
+  },
+  {
+    "id": "P026",
+    "style_name": "Air Jordan 1 High Chicago",
+    "brand": "Jordan",
+    "product_type": "footwear",
+    "colors": [
+      "red",
+      "white",
+      "black"
+    ],
+    "silhouette": "high",
+    "price": 180,
+    "owned": false,
+    "tags": [
+      "aj1",
+      "hypebeast"
+    ],
+    "image": "https://placehold.co/200/3a1f12/d4af37?text=AJ1"
+  },
+  {
+    "id": "P027",
+    "style_name": "Air Jordan 4 Bred",
+    "brand": "Jordan",
+    "product_type": "footwear",
+    "colors": [
+      "black",
+      "red"
+    ],
+    "silhouette": "chunky",
+    "price": 210,
+    "owned": false,
+    "tags": [
+      "aj4",
+      "formula1"
+    ],
+    "image": "https://placehold.co/200/111/f87171?text=AJ4"
+  },
+  {
+    "id": "P028",
+    "style_name": "Dior B30 Sneaker",
+    "brand": "Dior",
+    "product_type": "footwear",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "silhouette": "chunky",
+    "price": 1200,
+    "owned": false,
+    "tags": [
+      "luxury",
+      "dior"
+    ],
+    "image": "https://placehold.co/200/111/f2f2f5?text=B30"
+  },
+  {
+    "id": "P029",
+    "style_name": "LV Trainer Sneaker",
+    "brand": "Louis Vuitton",
+    "product_type": "footwear",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "silhouette": "chunky",
+    "price": 1100,
+    "owned": false,
+    "tags": [
+      "luxury",
+      "lv"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/d4af37?text=LV+Trainer"
+  },
+  {
+    "id": "P030",
+    "style_name": "Rolex Submariner",
+    "brand": "Rolex",
+    "product_type": "accessory",
+    "colors": [
+      "steel"
+    ],
+    "silhouette": "substantial",
+    "price": 10000,
+    "owned": false,
+    "tags": [
+      "watch",
+      "luxury",
+      "ice"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Sub"
+  },
+  {
+    "id": "P031",
+    "style_name": "Cartier Love Bracelet",
+    "brand": "Cartier",
+    "product_type": "accessory",
+    "colors": [
+      "gold"
+    ],
+    "silhouette": "minimal",
+    "price": 6500,
+    "owned": false,
+    "tags": [
+      "jewelry",
+      "luxury"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Love"
+  },
+  {
+    "id": "P032",
+    "style_name": "Stone Island Badge Jacket",
+    "brand": "Stone Island",
+    "product_type": "outerwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "fitted",
+    "price": 650,
+    "owned": false,
+    "tags": [
+      "tech",
+      "stone-island"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=SI"
+  },
+  {
+    "id": "P033",
+    "style_name": "Trapstar Irongate Hoodie",
+    "brand": "Trapstar",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "oversized",
+    "price": 160,
+    "owned": false,
+    "tags": [
+      "drill",
+      "trapstar"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Irongate"
+  },
+  {
+    "id": "P034",
+    "style_name": "Gallery Dept Distressed Denim",
+    "brand": "Gallery Dept",
+    "product_type": "bottom",
+    "colors": [
+      "blue"
+    ],
+    "silhouette": "wide",
+    "price": 550,
+    "owned": false,
+    "tags": [
+      "denim",
+      "y2k",
+      "formula3"
+    ],
+    "image": "https://placehold.co/200/1a2a3a/60a5fa?text=Gallery"
+  },
+  {
+    "id": "P035",
+    "style_name": "Sp5der Graphic Hoodie",
+    "brand": "Sp5der",
+    "product_type": "top",
+    "colors": [
+      "black",
+      "pink"
+    ],
+    "silhouette": "oversized",
+    "price": 220,
+    "owned": false,
+    "tags": [
+      "graphic",
+      "hypebeast",
+      "formula2"
+    ],
+    "image": "https://placehold.co/200/3a1f2a/f87171?text=Sp5der"
+  },
+  {
+    "id": "P036",
+    "style_name": "New Era Fitted Cap",
+    "brand": "New Era",
+    "product_type": "accessory",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "fitted",
+    "price": 40,
+    "owned": false,
+    "tags": [
+      "headwear"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=New+Era"
+  },
+  {
+    "id": "P037",
+    "style_name": "Chrome Hearts Bracelet",
+    "brand": "Chrome Hearts",
+    "product_type": "accessory",
+    "colors": [
+      "silver"
+    ],
+    "silhouette": "substantial",
+    "price": 850,
+    "owned": false,
+    "tags": [
+      "jewelry",
+      "ch"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=CH"
+  },
+  {
+    "id": "P038",
+    "style_name": "Nike Tech Fleece Pants",
+    "brand": "Nike",
+    "product_type": "bottom",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "relaxed",
+    "price": 110,
+    "owned": false,
+    "tags": [
+      "tech",
+      "formula4"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Tech+Pants"
+  },
+  {
+    "id": "P039",
+    "style_name": "Balenciaga Triple S",
+    "brand": "Balenciaga",
+    "product_type": "footwear",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "silhouette": "chunky",
+    "price": 950,
+    "owned": false,
+    "tags": [
+      "chunky",
+      "luxury"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=Triple+S"
+  },
+  {
+    "id": "P040",
+    "style_name": "Goyard Cardholder",
+    "brand": "Goyard",
+    "product_type": "accessory",
+    "colors": [
+      "black",
+      "tan"
+    ],
+    "silhouette": "minimal",
+    "price": 450,
+    "owned": false,
+    "tags": [
+      "luxury",
+      "bag"
+    ],
+    "image": "https://placehold.co/200/2a2a1a/d4af37?text=Goyard"
+  },
+  {
+    "id": "P041",
+    "style_name": "North Face Nuptse Puffer",
+    "brand": "The North Face",
+    "product_type": "outerwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "substantial",
+    "price": 320,
+    "owned": false,
+    "tags": [
+      "puffer",
+      "hypebeast"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=Nuptse"
+  },
+  {
+    "id": "P042",
+    "style_name": "Off-White Diagonal Tee",
+    "brand": "Off-White",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "relaxed",
+    "price": 250,
+    "owned": false,
+    "tags": [
+      "offwhite",
+      "graphic"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=OW"
+  },
+  {
+    "id": "P043",
+    "style_name": "Palm Angels Track Jacket",
+    "brand": "Palm Angels",
+    "product_type": "top",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "silhouette": "fitted",
+    "price": 380,
+    "owned": false,
+    "tags": [
+      "palm",
+      "track"
+    ],
+    "image": "https://placehold.co/200/111/f2f2f5?text=Palm"
+  },
+  {
+    "id": "P044",
+    "style_name": "Represent Denim",
+    "brand": "Represent",
+    "product_type": "bottom",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "straight",
+    "price": 280,
+    "owned": false,
+    "tags": [
+      "denim"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Represent"
+  },
+  {
+    "id": "P045",
+    "style_name": "Yeezy 350 V2",
+    "brand": "adidas",
+    "product_type": "footwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "chunky",
+    "price": 220,
+    "owned": false,
+    "tags": [
+      "yeezy",
+      "hypebeast"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=Yeezy"
+  },
+  {
+    "id": "P046",
+    "style_name": "Air Jordan 11 Concord",
+    "brand": "Jordan",
+    "product_type": "footwear",
+    "colors": [
+      "black",
+      "white"
+    ],
+    "silhouette": "high",
+    "price": 220,
+    "owned": false,
+    "tags": [
+      "aj11",
+      "formula4"
+    ],
+    "image": "https://placehold.co/200/111/f2f2f5?text=AJ11"
+  },
+  {
+    "id": "P047",
+    "style_name": "AP Royal Oak",
+    "brand": "Audemars Piguet",
+    "product_type": "accessory",
+    "colors": [
+      "steel"
+    ],
+    "silhouette": "substantial",
+    "price": 25000,
+    "owned": false,
+    "tags": [
+      "watch",
+      "ap",
+      "luxury"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=AP"
+  },
+  {
+    "id": "P048",
+    "style_name": "Broken Planet Hoodie",
+    "brand": "Broken Planet",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "oversized",
+    "price": 90,
+    "owned": false,
+    "tags": [
+      "graphic",
+      "formula2"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Broken+Planet"
+  },
+  {
+    "id": "P049",
+    "style_name": "Denim Tears Cotton Wreath Hoodie",
+    "brand": "Denim Tears",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "relaxed",
+    "price": 180,
+    "owned": false,
+    "tags": [
+      "denimtears"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=DT"
+  },
+  {
+    "id": "P050",
+    "style_name": "Hermes Belt",
+    "brand": "Herm\u00e8s",
+    "product_type": "accessory",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "minimal",
+    "price": 650,
+    "owned": false,
+    "tags": [
+      "luxury",
+      "belt"
+    ],
+    "image": "https://placehold.co/200/111/d4af37?text=Hermes"
+  },
+  {
+    "id": "P051",
+    "style_name": "Corteiz Hoodie",
+    "brand": "Corteiz",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "oversized",
+    "price": 70,
+    "owned": false,
+    "tags": [
+      "uk",
+      "drill"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Corteiz"
+  },
+  {
+    "id": "P052",
+    "style_name": "Rick Owens Ramones",
+    "brand": "Rick Owens",
+    "product_type": "footwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "chunky",
+    "price": 950,
+    "owned": false,
+    "tags": [
+      "rick",
+      "noir"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=Ramones"
+  },
+  {
+    "id": "P053",
+    "style_name": "Fear of God Essentials Hoodie",
+    "brand": "Fear of God",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "relaxed",
+    "price": 90,
+    "owned": false,
+    "tags": [
+      "fog",
+      "essentials"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=FOG"
+  },
+  {
+    "id": "P054",
+    "style_name": "Prada Re-Nylon Jacket",
+    "brand": "Prada",
+    "product_type": "outerwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "fitted",
+    "price": 1800,
+    "owned": false,
+    "tags": [
+      "prada",
+      "nylon"
+    ],
+    "image": "https://placehold.co/200/111/9a9aa8?text=Prada"
+  },
+  {
+    "id": "P055",
+    "style_name": "Kith Hoodie",
+    "brand": "Kith",
+    "product_type": "top",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "relaxed",
+    "price": 150,
+    "owned": false,
+    "tags": [
+      "kith"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Kith"
+  },
+  {
+    "id": "P056",
+    "style_name": "Black Tech Fleece Puffer Vest",
+    "brand": "Nike",
+    "product_type": "outerwear",
+    "colors": [
+      "black"
+    ],
+    "silhouette": "fitted",
+    "price": 150,
+    "owned": true,
+    "tags": [
+      "tech",
+      "owned",
+      "vest"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Owned+Vest"
+  },
+  {
+    "id": "P057",
+    "style_name": "Charcoal Nylon Shell",
+    "brand": "Custom",
+    "product_type": "outerwear",
+    "colors": [
+      "charcoal"
+    ],
+    "silhouette": "relaxed",
+    "price": 180,
+    "owned": true,
+    "tags": [
+      "owned",
+      "shell"
+    ],
+    "image": "https://placehold.co/200/1c1c1e/9a9aa8?text=Owned+Shell"
+  }
+]
