@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sovereign Lens · Backend UI</title>
+<style>
+  :root { --bg:#0e0e12; --card:#17171e; --line:#2a2a35; --txt:#f2f2f5; --dim:#9a9aa8; --accent:#d4af37; --good:#4ade80; --red:#f87171; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt); font-family:-apple-system,system-ui,sans-serif; padding:16px; max-width:900px; margin:0 auto; }
+  h1 { font-size:22px; } h1 span { color:var(--accent); }
+  section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin:12px 0; }
+  label { display:block; font-size:13px; color:var(--dim); margin:8px 0 4px; }
+  input, select, textarea { width:100%; padding:10px; border-radius:8px; border:1px solid var(--line); background:#0b0b0f; color:var(--txt); }
+  button { padding:10px 16px; border:0; border-radius:8px; background:var(--accent); color:#111; font-weight:600; cursor:pointer; margin-top:8px; }
+  button.ghost { background:transparent; border:1px solid var(--line); color:var(--dim); }
+  .status { font-size:13px; margin:6px 0; }
+  .ok { color:var(--good); } .err { color:var(--red); }
+  pre { background:#0b0b0f; padding:10px; border-radius:8px; font-size:12px; overflow:auto; white-space:pre-wrap; }
+  .row { display:flex; gap:10px; } .row>* { flex:1; }
+  .item { border-top:1px solid var(--line); padding:8px 0; font-size:14px; }
+</style>
+</head>
+<body>
+<h1>SOVEREIGN <span>LENS</span> · Backend UI</h1>
+<p style="color:var(--dim);font-size:14px;">Talks to the local stdlib server. Static pages are public. Set the API key when <code>SOVEREIGN_API_KEY</code> is enabled. <a href="/" style="color:var(--accent)">Open Lens</a></p>
+
+<section>
+  <label>Backend base URL</label>
+  <input id="base" value="http://localhost:8080">
+  <label>API Key (optional)</label>
+  <input id="key" type="password" placeholder="Bearer token / X-API-Key">
+  <button onclick="checkStatus()">Check Status</button>
+  <div id="status" class="status"></div>
+</section>
+
+<section>
+  <h3>Compose</h3>
+  <label>Palette (comma)</label>
+  <input id="palette" value="black, charcoal, silver">
+  <div class="row">
+    <div><label>Budget max</label><input id="budget" type="number" placeholder="optional"></div>
+    <div style="display:flex;align-items:flex-end;gap:12px;">
+      <label><input type="checkbox" id="owned"> Owned only</label>
+      <label><input type="checkbox" id="twin" checked> Twin bias</label>
+    </div>
+  </div>
+  <button onclick="doCompose()">Compose</button>
+  <div id="compose-out"></div>
+</section>
+
+<section>
+  <h3>Digital Twin Prompt</h3>
+  <label><input type="checkbox" id="tunnels" checked> 4-inch tunnels</label>
+  <label><input type="checkbox" id="frames" checked> Thick frames</label>
+  <label><input type="checkbox" id="physique" checked> Athletic physique</label>
+  <label><input type="checkbox" id="tattoos" checked> Tattoos</label>
+  <label>Notes</label>
+  <textarea id="notes" rows="2"></textarea>
+  <button onclick="doTwin()">Generate Prompt</button>
+  <pre id="twin-out"></pre>
+</section>
+
+<section>
+  <h3>Products</h3>
+  <button class="ghost" onclick="loadProducts()">Load Products</button>
+  <div id="products"></div>
+</section>
+
+<script>
+const $ = id => document.getElementById(id);
+function headers() {
+  const h = {"Content-Type":"application/json"};
+  const k = $("key").value.trim();
+  if (k) {
+    h["Authorization"] = "Bearer " + k;
+    h["X-API-Key"] = k;
+  }
+  return h;
+}
+function base() { return $("base").value.replace(/\/$/,""); }
+if (location.protocol === "http:" || location.protocol === "https:") $("base").value = location.origin;
+
+async function checkStatus() {
+  const el = $("status");
+  el.innerHTML = "Checking…";
+  try {
+    const r = await fetch(base()+"/api/status", {headers:headers()});
+    const j = await r.json();
+    if (!r.ok) throw new Error(JSON.stringify(j));
+    el.className = "status ok";
+    el.textContent = `OK · auth_required=${j.auth_required} · products=${j.products} · archive=${j.archive}`;
+  } catch(e) {
+    el.className = "status err";
+    el.textContent = e.message;
+  }
+}
+
+async function doCompose() {
+  const body = {
+    palette: $("palette").value.split(",").map(s=>s.trim()).filter(Boolean),
+    owned_only: $("owned").checked,
+    twin_bias: $("twin").checked,
+    budget_max: $("budget").value ? +$("budget").value : null
+  };
+  const out = $("compose-out");
+  out.innerHTML = "Working…";
+  try {
+    const r = await fetch(base()+"/api/compose", {method:"POST", headers:headers(), body:JSON.stringify(body)});
+    const j = await r.json();
+    if (!r.ok) throw new Error(JSON.stringify(j));
+    out.innerHTML = j.map(o => `
+      <div class="item"><b>${o.id}</b> · score ${o.score} · $${o.price}<br>
+      <small>${o.items.map(i=>i.style_name).join(" · ")}</small></div>`).join("") || "No results";
+  } catch(e) { out.innerHTML = `<div class="err">${e.message}</div>`; }
+}
+
+async function doTwin() {
+  const body = {
+    tunnels: $("tunnels").checked,
+    frames: $("frames").checked,
+    physique: $("physique").checked,
+    tattoos: $("tattoos").checked,
+    notes: $("notes").value
+  };
+  const out = $("twin-out");
+  out.textContent = "Working…";
+  try {
+    const r = await fetch(base()+"/api/twin-prompt", {method:"POST", headers:headers(), body:JSON.stringify(body)});
+    const j = await r.json();
+    if (!r.ok) throw new Error(JSON.stringify(j));
+    out.textContent = "POSITIVE:\n" + j.positive + "\n\nNEGATIVE:\n" + j.negative;
+  } catch(e) { out.textContent = e.message; }
+}
+
+async function loadProducts() {
+  const out = $("products");
+  out.innerHTML = "Loading…";
+  try {
+    const r = await fetch(base()+"/api/products", {headers:headers()});
+    const j = await r.json();
+    if (!r.ok) throw new Error(JSON.stringify(j));
+    out.innerHTML = j.map(p => `<div class="item">${p.style_name} · ${p.brand} · $${p.price} ${p.owned?"· OWNED":""}</div>`).join("");
+  } catch(e) { out.innerHTML = `<div class="err">${e.message}</div>`; }
+}
+</script>
+</body>
+</html>

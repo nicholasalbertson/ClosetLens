@@ -1,0 +1,330 @@
+[
+  {
+    "artist": "Digga D",
+    "type": "Documented",
+    "id": "DD-01",
+    "desc": "Supreme GORE-TEX Yankees blue puffer, navy base, LV Trainer Snow Blue",
+    "tags": [
+      "blue",
+      "puffer",
+      "lv"
+    ]
+  },
+  {
+    "artist": "Central Cee",
+    "type": "Documented",
+    "id": "CC-01",
+    "desc": "Gucci webbing cap, Nike Tech Windrunner, Umbro England, Air Max 95 England",
+    "tags": [
+      "tech",
+      "england"
+    ]
+  },
+  {
+    "artist": "Lil Baby",
+    "type": "Custom",
+    "id": "LB-C1",
+    "desc": "Pearl-white padded fashion vest, white ribbed tank, pale blue stacked denim, layered Cubans",
+    "tags": [
+      "ice",
+      "vest",
+      "white"
+    ]
+  },
+  {
+    "artist": "Playboi Carti",
+    "type": "Custom",
+    "id": "PC-C1",
+    "desc": "Long draped black parka, cropped hoodie, leather flares, engineer boots, open-eye face cover",
+    "tags": [
+      "black",
+      "gothic",
+      "mask"
+    ]
+  },
+  {
+    "artist": "Eladio Carri\u00f3n",
+    "type": "Custom",
+    "id": "EC-C1",
+    "desc": "Ivory tailored jacket, black polo, charcoal wide trousers, black loafers, 5mm tennis",
+    "tags": [
+      "tailoring",
+      "executive"
+    ]
+  },
+  {
+    "artist": "BLAIZE",
+    "type": "Vest",
+    "id": "V01",
+    "desc": "Milano Ghost: matte charcoal nylon, map-grid, gunmetal hardware, raised collar",
+    "tags": [
+      "vest",
+      "tactical",
+      "shiva"
+    ]
+  },
+  {
+    "artist": "BLAIZE",
+    "type": "Vest",
+    "id": "V02",
+    "desc": "Celestial Ice: pearl-white quilted, winged-star crest, faux-fur collar, crystal pulls",
+    "tags": [
+      "vest",
+      "white",
+      "ice"
+    ]
+  },
+  {
+    "artist": "BLAIZE",
+    "type": "Vest",
+    "id": "V03",
+    "desc": "Opium Noir: elongated black leather-look, asymmetric, sculptural shoulders",
+    "tags": [
+      "vest",
+      "carti",
+      "noir"
+    ]
+  },
+  {
+    "artist": "BLAIZE",
+    "type": "Jewelry",
+    "id": "J-HALO",
+    "desc": "HALO MAX medallion \u2014 north star of the Icon label",
+    "tags": [
+      "halo",
+      "icon"
+    ]
+  },
+  {
+    "artist": "Shiva",
+    "type": "Custom",
+    "id": "SV-C1",
+    "desc": "Black thermal base, oversized matte technical jacket, tapered charcoal cargo, black Air Max, modest Cuban",
+    "tags": [
+      "milan",
+      "technical"
+    ]
+  },
+  {
+    "artist": "Anuel AA",
+    "type": "Custom",
+    "id": "AN-C1",
+    "desc": "White technical bomber, white joggers, 15mm Cuban, winged crest, pav\u00e9 watch",
+    "tags": [
+      "rhlm",
+      "white",
+      "ice"
+    ]
+  },
+  {
+    "artist": "Island Boys",
+    "type": "Custom",
+    "id": "IB-C1",
+    "desc": "Frost-white tactical padded vest, powder-blue hoodie, wide white cargos, pale grillz",
+    "tags": [
+      "maximal",
+      "white"
+    ]
+  },
+  {
+    "artist": "NLE Choppa",
+    "type": "Custom",
+    "id": "NC-C1",
+    "desc": "Black mesh athletic vest, gloss-black stacked cargos, heavy boots, geometric silver pendant",
+    "tags": [
+      "athletic",
+      "memphis"
+    ]
+  },
+  {
+    "artist": "Tony Effe",
+    "type": "Custom",
+    "id": "TE-C1",
+    "desc": "Oxblood sleeveless leather vest, black rib tank, coal bootcut leather trousers, tinted glasses",
+    "tags": [
+      "maximal",
+      "leather"
+    ]
+  },
+  {
+    "artist": "Gazo",
+    "type": "Custom",
+    "id": "GZ-C1",
+    "desc": "Black cashmere beanie, charcoal zipped hoodie, black shearling padded vest, black wide jeans",
+    "tags": [
+      "paris",
+      "noir"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-01",
+    "desc": "Pink floral hoodie, black distressed jeans, pink/white AJ1 High, silver watch, braids",
+    "tags": [
+      "pink",
+      "floral",
+      "aj1"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-02",
+    "desc": "Red zip hoodie, black Moncler puffer gilet, red sweatpants, CK waistband, black frames, tunnels, diamond chain",
+    "tags": [
+      "moncler",
+      "red",
+      "tonal"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-03",
+    "desc": "Red Moncler vest, white tee, white distressed jeans with red patches, AJ4 red/white, LV crossbody, Cuban",
+    "tags": [
+      "moncler",
+      "poolside",
+      "aj4"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-04",
+    "desc": "Black graphic tee, pink OPPS tactical vest, black cargo with pink stars, pink/black AJ4, pink Cuban",
+    "tags": [
+      "tactical",
+      "pink",
+      "aj4"
+    ]
+  },
+  {
+    "artist": "Formula",
+    "type": "Guide",
+    "id": "F1",
+    "desc": "Luxe Streetwear: Moncler puffer over Sp5der/Tech hoodie, Amiri/Purple distressed denim, matching Jordans, iced chain + watch",
+    "tags": [
+      "formula",
+      "luxe"
+    ]
+  },
+  {
+    "artist": "Formula",
+    "type": "Guide",
+    "id": "F2",
+    "desc": "Graphic Heavy: Full BAPE/Broken Planet camo or graphic set, statement AJ1/AJ4, LV or Goyard crossbody",
+    "tags": [
+      "formula",
+      "graphic"
+    ]
+  },
+  {
+    "artist": "Formula",
+    "type": "Guide",
+    "id": "F3",
+    "desc": "Y2K/Drill: Jersey over long-sleeve, Gallery Dept baggy jeans, AF1 or AJ1, bandana, PSD waistband",
+    "tags": [
+      "formula",
+      "drill"
+    ]
+  },
+  {
+    "artist": "Formula",
+    "type": "Guide",
+    "id": "F4",
+    "desc": "Monochromatic Tech: All-black Nike Tech tracksuit, black puffer vest, black/white AJ11 Concord",
+    "tags": [
+      "formula",
+      "tech"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-05",
+    "desc": "All-black Nike Tech tracksuit, black puffer vest, AJ11 Concord, silver Cuban, thick frames",
+    "tags": [
+      "tech",
+      "mono",
+      "formula4"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-06",
+    "desc": "BAPE full camo set, AJ1 Chicago, LV crossbody, New Era cap",
+    "tags": [
+      "bape",
+      "graphic",
+      "formula2"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-07",
+    "desc": "Jersey over long-sleeve, Gallery Dept baggy jeans, AF1, bandana, PSD waistband, tunnels",
+    "tags": [
+      "drill",
+      "y2k",
+      "formula3"
+    ]
+  },
+  {
+    "artist": "Image Series",
+    "type": "Documented",
+    "id": "IMG-08",
+    "desc": "Moncler Maya black over Sp5der hoodie, AMIRI MX1, AJ4 Bred, Rolex, HALO MAX",
+    "tags": [
+      "luxe",
+      "moncler",
+      "formula1"
+    ]
+  },
+  {
+    "artist": "BLAIZE",
+    "type": "Custom",
+    "id": "BZ-C1",
+    "desc": "Milano Ghost vest over black Tech hoodie, charcoal cargo, AM95, 10mm Cuban, tunnels + frames",
+    "tags": [
+      "vest",
+      "ghost",
+      "armory"
+    ]
+  },
+  {
+    "artist": "BLAIZE",
+    "type": "Custom",
+    "id": "BZ-C2",
+    "desc": "Celestial Ice white vest, white tank, pale stacked denim, silver tennis, white AF1",
+    "tags": [
+      "vest",
+      "ice",
+      "white"
+    ]
+  },
+  {
+    "artist": "Central Cee",
+    "type": "Reconstructed",
+    "id": "CC-R1",
+    "desc": "Navy Tech Windrunner, Umbro England shorts, AM95 England, Gucci webbing cap, G-Shock",
+    "tags": [
+      "central-cee",
+      "england"
+    ]
+  },
+  {
+    "artist": "Playboi Carti",
+    "type": "Custom",
+    "id": "PC-C2",
+    "desc": "Opium Noir elongated vest, black leather flares, engineer boots, open-eye cover, silver chain",
+    "tags": [
+      "carti",
+      "noir",
+      "opium"
+    ]
+  }
+]
